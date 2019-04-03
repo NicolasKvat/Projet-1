@@ -7,40 +7,197 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/airbnb.png">
   <title>Projet 1</title>
 </head>
 <body>
   <!-- Barre de Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white border">
+      <a class="navbar-brand" href="#">
+        <img src="img/airbnb.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </a>
+      <form class="form-inline my-2 my-0">
+        <input class="form-control mr-sm-2 border-light" type="search" placeholder="Essayer 'San Diego'" aria-label="Search">
+      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Devenir hôte
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <div class="dropdown-divised">
+                <div class="container">
+                  <div class="row my-2">
+                    <div class="col-sm">
+                      <h6>Logements</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h6>Publiez votre annonce</h6>
+                    </div>
+                    <div class="col-sm-2">
+                      <img src="img/airbnb.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inscription</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Connexion</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Explorer Airbnb -->
+  <div class="container container-explorer">
+    <div class="row row-explorer mt-5 pl-3">
+      <h3>Explorer Airbnb</h3>
     </div>
-  </nav>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 row mb-4">
+            <a href="#" class="text-decoration-none Logements text-white">Logements</a>
+            <a href="#" class="text-decoration-none Experiences text-white">Expériences</a>
+            <a href="#" class="text-decoration-none Restaurants text-white" >Restaurants</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bannière -->
+  <div class="container container-baniere">
+    <p>Les conditions s'appliquent. Voir le règlement officiel.</p>
+    <div class="row">
+      <div class="col-sm">
+        <a href="#" class="text-decoration-none">
+          <div class="a-baniere text-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 mt-5 ml-5 mb-3">
+                  <h3>Gagnez une nuit au Louvre</h3>
+                </div>
+                <div class="col-sm ml-5">
+                  <button type="button" class="btn btn-outline-light btn-lg">Participez maintenant</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Nos recommandations -->
+  <div class="container container-recommandation">
+    <div class="row row-explorer mt-5 pl-3">
+      <h3>Nos recommandations</h3>
+    </div>
+    <div class="container text-white text-center p-0">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="inam" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px; margin: auto">
+                        <div class="card-body New-York">
+                          <h4 class="card-title">New York</h4>
+                          <p class="card-text">107€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px;">
+                        <div class="card-body Paris">
+                          <h4 class="card-title">Paris</h4>
+                          <p class="card-text">98€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px;">
+                        <div class="card-body tokyo">
+                          <h4 class="card-title">Tokyo</h4>
+                          <p class="card-text">85€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px;">
+                        <div class="card-body londre">
+                          <h4 class="card-title">Londre</h4>
+                          <p class="card-text">105€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px; margin: auto">
+                        <div class="card-body los-angeles">
+                          <h4 class="card-title">Los Angeles</h4>
+                          <p class="card-text">116€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px;">
+                        <div class="card-body barcelone">
+                          <h4 class="card-title">Barcelone</h4>
+                          <p class="card-text">85€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px;">
+                        <div class="card-body">
+                          <h4 class="card-title">New York</h4>
+                          <p class="card-text">107€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <div class="card" style="width: 260px;">
+                        <div class="card-body">
+                          <h4 class="card-title">New York</h4>
+                          <p class="card-text">107€/nuit en moyenne</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#inam" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark"></span>
+            </a>
+            <a href="#inam" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon bg-dark"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

@@ -3,10 +3,165 @@ html, body {
   padding: 0
 }
 
-.container-fluid {
-  width: 100%;
+a {
+  text-decoration: none;
+}
+/* Barre de navigation */
+
+.navbar {
   height: 80px;
-  position: fixed;
-  background-color: red;
-  padding: 0;
+}
+
+.form-inline {
+  width: 100%;
+  height: 48px;
+}
+
+.form-control {
+  width: 100%;
+  height: 48px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-item:hover {
+  border-bottom: 1px solid black;
+}
+/* Explorer Airbnb */
+
+.container-explorer {
+  margin: 32px auto;
+}
+
+.Logements,.Experiences, .Restaurants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 72px;
+  width: 254px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 5px;;
+}
+
+.Logements:hover, .Experiences:hover, .Restaurants:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Logements {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 98%), center top / cover url("../img/bg-logements.jpg");
+  background-size: cover;
+}
+
+.Experiences {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 98%), center top / cover url("../img/bg-experiences.jpg");
+  background-size: cover;
+}
+
+.Restaurants {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 98%), center top / cover url("../img/bg-restaurants.jpg");
+  background-size: cover;
+}
+
+.col-sm a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bannière */
+
+.a-baniere {
+  width: 100%;
+  height: 350px;
+  background-image: url(../img/bg-baniere.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.participez {
+  height: 50px;
+  background: white;
+  border-radius: 5px;
+}
+
+.participez p {
+ display: block;
+ height: auto;
+ width: auto;
+}
+
+/* Nos recommandations */
+
+.card-body {
+  height: 325px;
+}
+
+.carousel-control-prev-icon {
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  border-radius: 50%;
+}
+
+.New-York {
+  background-image: url(../img/New-York.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Paris {
+  background-image: url(../img/paris.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tokyo {
+  background-image: url(../img/tokyo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.londre {
+  background-image: url(../img/londre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.los-angeles {
+  background-image: url(../img/los-angeles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.barcelone {
+  background-image: url(../img/barcelone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
