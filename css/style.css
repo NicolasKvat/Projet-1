@@ -2,11 +2,23 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: normal;
 }
 
 a {
   text-decoration: none;
 }
+
+h3, h5 {
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: bold;
+  color: rgb(165,165,165);
+}
+
 /* Barre de navigation */
 
 .navbar {
@@ -42,7 +54,7 @@ a {
 }
 
 .nav-item:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 /* Explorer Airbnb */
 
@@ -70,16 +82,19 @@ a {
 .Logements {
   background: radial-gradient(ellipse at center, rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 98%), center top / cover url("../img/bg-logements.jpg");
   background-size: cover;
+  text-shadow: 1px 1px 2px black;
 }
 
 .Experiences {
   background: radial-gradient(ellipse at center, rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 98%), center top / cover url("../img/bg-experiences.jpg");
   background-size: cover;
+  text-shadow: 1px 1px 2px black;
 }
 
 .Restaurants {
   background: radial-gradient(ellipse at center, rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 98%), center top / cover url("../img/bg-restaurants.jpg");
   background-size: cover;
+  text-shadow: 1px 1px 2px black;
 }
 
 .col-sm a {
@@ -186,5 +201,20 @@ a {
 }
 
 .card-body h4 {
+  font-weight: bold;
+}
+
+/*Expériences très bien notées*/
+
+.ex-note {
+  font-weight: bold;
+}
+
+.p-note {
+  font-size: 10px;
+  color: rgb(165,165,165);
+}
+
+.s-note {
   font-weight: bold;
 }
